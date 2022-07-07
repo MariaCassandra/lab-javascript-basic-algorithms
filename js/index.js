@@ -19,17 +19,17 @@ if (hacker1.length > hacker2.length) {
 
 // Iteration 3: Loops
 
-let spaceName = ' ';
+let spacedName = ' ';
 for (let i = 0; i < hacker1.length; i++) {
-  spaceName = spaceName + hacker1[i].toUpperCase() + ' ';
+  spacedName = spacedName + hacker1[i].toUpperCase() + ' ';
 }
-console.log(spaceName)
+console.log(spacedName)
 
-let reverseName = '';
+let reversedName = '';
 for(let i = hacker2.length -1; i >= 0; i--) {
-  reverseName = reverseName + hacker2[i];
+  reversedName = reversedName + hacker2[i];
 }
-console.log(reverseName);
+console.log(reversedName);
 
 let orderName = hacker1.localeCompare(hacker2);
 if(orderName === -1) {
