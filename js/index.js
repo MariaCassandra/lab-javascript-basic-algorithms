@@ -55,3 +55,24 @@ function countOfWords(lorem) {
 console.log(countOfWords(lorem));
 
 // Bonus 2: 
+function palindrome(phrase) {
+    let letters = /[^A-Za-z0-9]/g;
+    let mixUp = phrase.toLowerCase('').replace(letters, '');
+    let longitud = mixUp.length;
+    for (let i = 0; i < longitud/2; i++) {
+      if (mixUp[i] !== mixUp[longitud - 1 - i]) { 
+          return console.log("false");
+      }
+    } console.log("true");
+   }
+   
+   palindrome("A man, a plan, a canal. Panama");
+   palindrome("Amor, Roma");
+   palindrome("race car");
+   palindrome("stack cats");
+   palindrome("step on no pets");
+   palindrome("taco cat");
+   palindrome("put it up");
+   palindrome("Was it a car or a cat I saw?");
+   palindrome( "No 'x' in Nixon")
+   palindrome( "No es un palíndromo");
